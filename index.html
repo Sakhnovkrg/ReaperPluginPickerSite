@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Visual plugin browser for REAPER DAW"
+    />
+
+    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+
+    <link
+      rel="canonical"
+      href="https://dsgdnb.com/reaper-plugin-picker/"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="REAPER Plugin Picker" />
+    <meta
+      property="og:description"
+      content="Visual plugin browser for REAPER DAW"
+    />
+    <meta
+      property="og:image"
+      content="https://dsgdnb.com/reaper-plugin-picker/img/og.png"
+    />
+    <meta
+      property="og:url"
+      content="https://dsgdnb.com/reaper-plugin-picker/"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <title>REAPER Plugin Picker</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="https://dsgdnb.com" target="_blank" rel="noopener noreferrer" class="navbar__brand">
+        <img src="./assets/img/dsg.svg" alt="DsgDnB" />
+      </a>
+      <ul class="navbar__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#howto">How to Use</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <video
+        class="header__video"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source src="./assets/video/main.mp4" type="video/mp4" />
+      </video>
+
+      <div class="header__overlay"></div>
+
+      <div class="header__content">
+        <h1 class="header__title">REAPER Plugin Picker</h1>
+        <p class="header__subtitle">Visual plugin browser for <img src="./assets/img/favicon.svg" alt="REAPER" /></p>
+      </div>
+
+      <div class="header__scroll-hint">
+        <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+          <path d="M2 2L20 18L38 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <section class="features" id="features">
+        <div class="container">
+        <h2 class="features__title">Features</h2>
+
+        <div class="features__grid">
+          <div class="feature-card-wrapper">
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Fast Workflow</h3>
+              <p class="feature-card__text">Fast opening and search, designed around visual plugin browsing.</p>
+            </div>
+          </div>
+
+          <div class="feature-card-wrapper">
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <path d="M8 21h8M12 17v4"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Cross-platform</h3>
+              <p class="feature-card__text">Windows, macOS and Linux. ImGui-powered — renders via DirectX, Metal or OpenGL depending on your OS.</p>
+            </div>
+          </div>
+
+          <div class="feature-card-wrapper">
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Screenshot Capture</h3>
+              <p class="feature-card__text">Capture a screenshot of any plugin window.</p>
+            </div>
+          </div>
+
+          <div class="feature-card-wrapper">
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="7" height="7"/>
+                  <rect x="14" y="3" width="7" height="7"/>
+                  <rect x="3" y="14" width="7" height="7"/>
+                  <rect x="14" y="14" width="7" height="7"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Plugin Groups</h3>
+              <p class="feature-card__text">Organize plugins into custom groups — by type, project, genre or however you like.</p>
+            </div>
+          </div>
+
+          <div class="feature-card-wrapper">
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Customization</h3>
+              <p class="feature-card__text">Colors, window size and grid layout — all adjustable.</p>
+            </div>
+          </div>
+
+          <div class="feature-card-wrapper">
+            <div class="feature-card">
+              <div class="feature-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                </svg>
+              </div>
+              <h3 class="feature-card__title">No Clutter</h3>
+              <p class="feature-card__text">You add only the plugins you actually use. No auto-scanned junk.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="download" id="download">
+        <div class="container">
+          <h2 class="download__title">Download</h2>
+          <p class="download__subtitle">Try or use it free. The only limit is 18 plugins and a Demo badge.</p>
+
+          <div class="download__grid">
+            <a href="https://drive.google.com/drive/folders/1QVpRI1xOclxcLjAXvP9iGoK3K8ZW0dW1?usp=sharing" target="_blank" rel="noopener noreferrer" class="download__card" data-os="windows">
+              <svg viewBox="0 0 24 24" fill="none" width="32" height="32">
+                <path d="M3.375 5.5315L9.844 4.669V10.7065H3.375V5.5315ZM12.431 4.4225L20.625 3.375V10.7065H12.431V4.4225ZM12.431 13.725L20.625 13.9165V20.625L12.431 19.2835V13.725ZM3.375 13.294L9.844 13.4495V18.9L3.375 17.81V13.294Z" fill="currentColor" stroke="currentColor" stroke-width="1.9165" stroke-linejoin="round"/>
+              </svg>
+              <span class="download__card-title">Windows</span>
+              <span class="download__card-info">10+ x64</span>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1QVpRI1xOclxcLjAXvP9iGoK3K8ZW0dW1?usp=sharing" target="_blank" rel="noopener noreferrer" class="download__card" data-os="macos">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              <span class="download__card-title">macOS ARM</span>
+              <span class="download__card-info">Apple Silicon</span>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1QVpRI1xOclxcLjAXvP9iGoK3K8ZW0dW1?usp=sharing" target="_blank" rel="noopener noreferrer" class="download__card" data-os="macos">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              <span class="download__card-title">macOS x86</span>
+              <span class="download__card-info">Intel 64-bit</span>
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/1QVpRI1xOclxcLjAXvP9iGoK3K8ZW0dW1?usp=sharing" target="_blank" rel="noopener noreferrer" class="download__card" data-os="linux">
+              <img src="./assets/img/linux.svg" alt="Linux" class="download__card-icon" />
+              <span class="download__card-title">Linux</span>
+              <span class="download__card-info">x86_64</span>
+            </a>
+          </div>
+
+          <div class="download__license">
+            <a href="https://presetshare.lemonsqueezy.com/checkout/buy/36267221-df1f-4bf1-be06-ee31ca85ec75" target="_blank" rel="noopener noreferrer" class="download__buy-btn">Get Activation Key</a>
+            <p class="download__alt">or get it with your <a href="https://patreon.com/dsgdnb" target="_blank" rel="noopener noreferrer">Patreon</a> / <a href="https://boosty.to/dsgdnb" target="_blank" rel="noopener noreferrer">Boosty</a> subscription</p>
+            <p class="download__disclaimer">Please try the demo first to make sure the product works for you. Purchasing a license is an act of support for an indie developer and does not come with any warranties or guarantees.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="howto" id="howto">
+        <div class="container">
+          <h2 class="howto__title">How to Use</h2>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="howto__youtube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"/>
+            </svg>
+            Watch Demo on YouTube
+          </a>
+          <div class="howto__content">
+          <div class="howto__tabs">
+            <button class="howto__tab howto__tab--active" data-tab="windows">Windows</button>
+            <button class="howto__tab" data-tab="macos">macOS</button>
+            <button class="howto__tab" data-tab="linux">Linux</button>
+          </div>
+
+          <div class="howto__panels">
+            <div class="howto__panel howto__panel--active" data-panel="windows">
+              <h3 class="howto__panel-title">Installation</h3>
+              <p>Copy the <code>.dll</code> file to the <code>UserPlugins</code> folder inside your REAPER resource path.</p>
+              <p class="howto__note">To find it: <code>Options &gt; Show REAPER resource path in explorer</code></p>
+              <p>Restart REAPER — Plugin Picker will appear in the Extensions menu.</p>
+              <p>You can assign a hotkey (e.g. <code>F1</code>) via <code>Actions &gt; Show Action List...</code> — search for <code>Plugin Picker: Toggle</code>.</p>
+              <h3 class="howto__panel-title">Customization</h3>
+              <p>Edit <code>config.json</code> to adjust colors and layout:</p>
+              <pre class="howto__code">%APPDATA%\PluginPicker\config.json</pre>
+            </div>
+
+            <div class="howto__panel" data-panel="macos">
+              <h3 class="howto__panel-title">Installation</h3>
+              <p>Copy the <code>.dylib</code> file to the <code>UserPlugins</code> folder inside your REAPER resource path.</p>
+              <p class="howto__note">To find it: <code>Options &gt; Show REAPER resource path in explorer</code></p>
+              <p>Remove the quarantine flag (macOS blocks unsigned third-party libraries by default):</p>
+              <pre class="howto__code">xattr -d com.apple.quarantine ~/Library/Application\ Support/REAPER/UserPlugins/reaper_plugin_picker-arm64.dylib</pre>
+              <p>macOS may also ask for screen recording permission — this is needed for the screenshot capture feature.</p>
+              <p>Restart REAPER — Plugin Picker will appear in the Extensions menu.</p>
+              <p>You can assign a hotkey (e.g. <code>F1</code>) via <code>Actions &gt; Show Action List...</code> — search for <code>Plugin Picker: Toggle</code>.</p>
+              <h3 class="howto__panel-title">Customization</h3>
+              <p>Edit <code>config.json</code> to adjust colors and layout:</p>
+              <pre class="howto__code">~/Library/Application Support/PluginPicker/config.json</pre>
+            </div>
+
+            <div class="howto__panel" data-panel="linux">
+              <h3 class="howto__panel-title">Installation</h3>
+              <p>Copy the <code>.so</code> file to the <code>UserPlugins</code> folder inside your REAPER resource path.</p>
+              <p class="howto__note">To find it: <code>Options &gt; Show REAPER resource path in explorer</code></p>
+              <p>Restart REAPER — Plugin Picker will appear in the Extensions menu.</p>
+              <p>You can assign a hotkey (e.g. <code>F1</code>) via <code>Actions &gt; Show Action List...</code> — search for <code>Plugin Picker: Toggle</code>.</p>
+              <h3 class="howto__panel-title">Customization</h3>
+              <p>Edit <code>config.json</code> to adjust colors and layout:</p>
+              <pre class="howto__code">~/.config/PluginPicker/config.json</pre>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__share">
+        <span class="footer__share-label">Share</span>
+        <div class="footer__share-icons">
+        <a class="footer__share-btn" data-share="x" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932zM17.61 20.644h2.039L6.486 3.24H4.298z"/></svg>
+        </a>
+        <a class="footer__share-btn" data-share="facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a class="footer__share-btn" data-share="reddit" title="Reddit" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.951 8.143c.36 0 .715.097 1.028.29a2.07 2.07 0 01.905 1.714 2.07 2.07 0 01-.52 1.378c.044.283.066.57.066.86 0 3.37-3.924 6.105-8.763 6.105S1.904 15.756 1.904 12.385c0-.278.02-.553.06-.824a2.07 2.07 0 01-.546-1.396 2.07 2.07 0 012.069-2.07c.54 0 1.05.21 1.432.59 1.413-.987 3.33-1.618 5.455-1.688l1.095-4.891a.358.358 0 01.427-.272l3.482.78a1.458 1.458 0 012.572.53zM8.662 14.486c-.74 0-1.34-.6-1.34-1.34s.6-1.34 1.34-1.34 1.34.6 1.34 1.34-.6 1.34-1.34 1.34zm6.676 0c-.74 0-1.34-.6-1.34-1.34s.6-1.34 1.34-1.34 1.34.6 1.34 1.34-.6 1.34-1.34 1.34zm.252 2.243c-.838.838-2.432 .905-3.59.905s-2.752-.067-3.59-.905a.316.316 0 01.447-.447c.525.525 1.648.712 3.143.712s2.618-.187 3.143-.712a.316.316 0 01.447.447z"/></svg>
+        </a>
+        <a class="footer__share-btn" data-share="vk" title="VK" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.864 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.644v3.168c0 .373.17.508.271.508.22 0 .407-.135.813-.542 1.253-1.406 2.15-3.574 2.15-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.644-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
+        </a>
+        <a class="footer__share-btn" data-share="telegram" title="Telegram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+        </div>
+      </div>
+      <p>Created by <a href="https://dsgdnb.com" target="_blank" rel="noopener noreferrer">DsgDnB</a> <img class="footer__flag" src="./assets/img/kz.svg" alt="KZ" /></p>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
