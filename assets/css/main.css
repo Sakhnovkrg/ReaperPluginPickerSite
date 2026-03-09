@@ -537,6 +537,19 @@
   color: rgba(255, 255, 255, 0.25);
 }
 
+.download__forum-link {
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.download__forum-link:hover {
+  color: #fff;
+}
+
 @media (max-width: 600px) {
   .download__grid {
     grid-template-columns: repeat(2, 1fr);
