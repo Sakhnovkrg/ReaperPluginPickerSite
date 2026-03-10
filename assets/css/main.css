@@ -528,14 +528,34 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.download__alt a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+.download__sub-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.75rem;
 }
 
-.download__alt a:hover {
+.download__sub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.download__sub-link:hover {
   color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.download__sub-icon {
+  height: 20px;
+  width: auto;
 }
 
 .download__disclaimer {
