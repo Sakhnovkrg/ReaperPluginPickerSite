@@ -376,6 +376,13 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    position: sticky;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
   .header {
     height: auto;
     aspect-ratio: 16 / 9;
