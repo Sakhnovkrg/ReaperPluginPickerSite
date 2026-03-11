@@ -494,6 +494,19 @@
   margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
+.download__alpha a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.download__alpha a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .download__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -609,19 +622,6 @@
   margin-top: 1.5rem;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.25);
-}
-
-.download__forum-link {
-  display: inline-block;
-  margin-top: 1.2rem;
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.download__forum-link:hover {
-  color: #fff;
 }
 
 @media (max-width: 600px) {
