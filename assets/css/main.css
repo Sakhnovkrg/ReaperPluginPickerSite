@@ -484,6 +484,13 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  margin-bottom: 0.5rem;
+}
+
+.download__alpha {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
   margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
