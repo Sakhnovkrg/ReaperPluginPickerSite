@@ -221,6 +221,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: 0 clamp(1rem, 4vw, 3rem);
   color: #fff;
   text-align: center;
   font-family:
@@ -440,6 +441,19 @@
     aspect-ratio: 16 / 9;
   }
 
+  .header__title {
+    font-size: clamp(1.6rem, 5vw, 2.5rem);
+  }
+
+  .header__youtube {
+    margin-top: 0.6rem;
+  }
+
+  .header__youtube svg {
+    width: 36px;
+    height: 36px;
+  }
+
   .header__scroll-hint {
     display: none;
   }
@@ -456,6 +470,25 @@
   .feature-card-wrapper::before,
   .feature-card::before {
     opacity: 1 !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    height: 56px;
+    padding: 0 1rem;
+  }
+
+  .navbar__brand img {
+    height: 36px;
+  }
+
+  .navbar__links {
+    gap: 0.8rem;
+  }
+
+  .navbar__links a {
+    font-size: 0.9rem;
   }
 }
 
