@@ -249,6 +249,18 @@
   width: auto;
 }
 
+.header__youtube {
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: #ff0033;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__youtube:hover {
+  opacity: 0.8;
+  transform: scale(1.15);
+}
+
 .header__scroll-hint {
   position: absolute;
   bottom: 2rem;
