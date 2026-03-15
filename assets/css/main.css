@@ -251,10 +251,22 @@
 }
 
 .header__youtube {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-top: 1.2rem;
   color: #ff0033;
+  text-decoration: none;
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__youtube span {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ff0033;
 }
 
 .header__youtube:hover {
