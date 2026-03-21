@@ -131,7 +131,7 @@
                 </svg>
               </div>
               <h3 class="feature-card__title">Screenshot Capture</h3>
-              <p class="feature-card__text">Capture a screenshot of any plugin window.</p>
+              <p class="feature-card__text">Capture plugin screenshots — manually or automatically.</p>
             </div>
           </div>
 
@@ -235,6 +235,12 @@
               </a>
             </div>
           </div>
+          <a href="https://www.youtube.com/watch?v=3UFyvPxbsNM" target="_blank" rel="noopener noreferrer" class="howto__youtube" style="margin-top: clamp(1.5rem, 3vw, 2.5rem);">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+              <path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"/>
+            </svg>
+            v0.3.0 Showcase
+          </a>
         </div>
       </section>
 
@@ -261,23 +267,15 @@
               <p class="howto__note">To find it: <code>Options &gt; Show REAPER resource path in explorer</code></p>
               <p>Restart REAPER — Plugin Picker will appear in the Extensions menu.</p>
               <p>You can assign a hotkey (e.g. <code>F1</code>) via <code>Actions &gt; Show Action List...</code> — search for <code>Plugin Picker: Toggle</code>.</p>
-              <h3 class="howto__panel-title">Customization</h3>
-              <p>Edit <code>config.json</code> to adjust colors and layout:</p>
-              <pre class="howto__code">%APPDATA%\PluginPicker\config.json</pre>
             </div>
 
             <div class="howto__panel" data-panel="macos">
               <h3 class="howto__panel-title">Installation</h3>
               <p>Copy the <code>.dylib</code> file to the <code>UserPlugins</code> folder inside your REAPER resource path.</p>
               <p class="howto__note">To find it: <code>Options &gt; Show REAPER resource path in explorer</code></p>
-              <p>Remove the quarantine flag (macOS blocks unsigned third-party libraries by default):</p>
-              <pre class="howto__code">xattr -d com.apple.quarantine ~/Library/Application\ Support/REAPER/UserPlugins/reaper_plugin_picker-arm64.dylib</pre>
-              <p>macOS may also ask for screen recording permission — this is needed for the screenshot capture feature.</p>
+              <p>macOS may ask for screen recording permission — this is needed for the screenshot capture feature.</p>
               <p>Restart REAPER — Plugin Picker will appear in the Extensions menu.</p>
               <p>You can assign a hotkey (e.g. <code>F1</code>) via <code>Actions &gt; Show Action List...</code> — search for <code>Plugin Picker: Toggle</code>.</p>
-              <h3 class="howto__panel-title">Customization</h3>
-              <p>Edit <code>config.json</code> to adjust colors and layout:</p>
-              <pre class="howto__code">~/Library/Application\ Support/PluginPicker/config.json</pre>
             </div>
 
             <div class="howto__panel" data-panel="linux">
@@ -286,9 +284,6 @@
               <p class="howto__note">To find it: <code>Options &gt; Show REAPER resource path in explorer</code></p>
               <p>Restart REAPER — Plugin Picker will appear in the Extensions menu.</p>
               <p>You can assign a hotkey (e.g. <code>F1</code>) via <code>Actions &gt; Show Action List...</code> — search for <code>Plugin Picker: Toggle</code>.</p>
-              <h3 class="howto__panel-title">Customization</h3>
-              <p>Edit <code>config.json</code> to adjust colors and layout:</p>
-              <pre class="howto__code">~/.config/PluginPicker/config.json</pre>
             </div>
           </div>
           </div>
